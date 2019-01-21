@@ -1,0 +1,718 @@
+family,language,dialect,vot.category,poa2,vot.mu
+Afro-Asiatic,Amharic,NA,short.lag,coronal,33.55
+Afro-Asiatic,Amharic,NA,short.lag,dorsal,43.8
+Afro-Asiatic,Amharic,NA,short.lag,labial,19
+Afro-Asiatic,Arabic,NA,lead,coronal,-71
+Afro-Asiatic,Arabic,NA,lead,dorsal,-57
+Afro-Asiatic,Arabic,NA,lead,labial,-64
+Afro-Asiatic,Arabic,NA,long.lag,coronal,33.5
+Afro-Asiatic,Arabic,NA,long.lag,dorsal,42.7
+Afro-Asiatic,Dahalo,NA,short.lag,coronal,28.5
+Afro-Asiatic,Dahalo,NA,short.lag,dorsal,27
+Afro-Asiatic,Dahalo,NA,short.lag,labial,20
+Afro-Asiatic,Hebrew (Modern),NA,lead,coronal,-90.9
+Afro-Asiatic,Hebrew (Modern),NA,lead,dorsal,-81.3
+Afro-Asiatic,Hebrew (Modern),NA,lead,labial,-91.9
+Afro-Asiatic,Hebrew (Modern),NA,long.lag,coronal,34.55
+Afro-Asiatic,Hebrew (Modern),NA,long.lag,dorsal,58.95
+Afro-Asiatic,Hebrew (Modern),NA,long.lag,labial,27.05
+Afro-Asiatic,Musey,NA,short.lag,coronal,18.5
+Afro-Asiatic,Musey,NA,short.lag,dorsal,31.5
+Afro-Asiatic,Musey,NA,short.lag,labial,20.5
+Algic,Ojibwe,Salteaux,short.lag,coronal,19.425
+Algic,Ojibwe,Salteaux,short.lag,dorsal,17.5708333333333
+Algic,Ojibwe,Salteaux,short.lag,labial,8.75833333333333
+Altaic,Azerbaijani,NA,long.lag,coronal,87.09
+Altaic,Azerbaijani,NA,long.lag,dorsal,115.905
+Altaic,Azerbaijani,NA,long.lag,labial,86.88
+Altaic,Azerbaijani,NA,short.lag,coronal,13.35
+Altaic,Azerbaijani,NA,short.lag,dorsal,44.715
+Altaic,Azerbaijani,NA,short.lag,labial,10.64
+Altaic,Turkish,NA,lead,coronal,-52.9
+Altaic,Turkish,NA,lead,dorsal,-9.75
+Altaic,Turkish,NA,lead,labial,-65.95
+Altaic,Turkish,NA,long.lag,coronal,49.7
+Altaic,Turkish,NA,long.lag,dorsal,69.35
+Altaic,Turkish,NA,long.lag,labial,40.75
+Arauan,Banawa,NA,short.lag,coronal,22
+Arauan,Banawa,NA,short.lag,dorsal,44
+Austro-Asiatic,Pnar,NA,lead,coronal,-86
+Austro-Asiatic,Pnar,NA,lead,labial,-108.5
+Austro-Asiatic,Pnar,NA,long.lag,coronal,58.5
+Austro-Asiatic,Pnar,NA,long.lag,dorsal,73.5
+Austro-Asiatic,Pnar,NA,long.lag,labial,55.5
+Austro-Asiatic,Pnar,NA,short.lag,coronal,8.5
+Austro-Asiatic,Pnar,NA,short.lag,dorsal,19.5
+Austro-Asiatic,Pnar,NA,short.lag,labial,8
+Austro-Asiatic,Remo,NA,short.lag,coronal,25
+Austro-Asiatic,Remo,NA,short.lag,dorsal,36
+Austro-Asiatic,Remo,NA,short.lag,labial,29
+Austronesian,Belep,NA,short.lag,coronal,15
+Austronesian,Belep,NA,short.lag,dorsal,34
+Austronesian,Belep,NA,short.lag,labial,19
+Austronesian,Madurese,NA,lead,coronal,-27.5
+Austronesian,Madurese,NA,lead,dorsal,-54
+Austronesian,Madurese,NA,lead,labial,-20
+Austronesian,Madurese,NA,long.lag,coronal,29
+Austronesian,Madurese,NA,long.lag,dorsal,52.25
+Austronesian,Madurese,NA,long.lag,labial,37.3333333333333
+Austronesian,Madurese,NA,short.lag,coronal,13
+Austronesian,Madurese,NA,short.lag,dorsal,24.25
+Austronesian,Madurese,NA,short.lag,labial,12.6666666666667
+Austronesian,Malay,Singaporean,short.lag,coronal,7.58
+Austronesian,Malay,Singaporean,short.lag,dorsal,36.02
+Austronesian,Malay,Singaporean,short.lag,labial,6.2
+Austronesian,Tsou,NA,short.lag,coronal,17
+Austronesian,Tsou,NA,short.lag,dorsal,28
+Austronesian,Tsou,NA,short.lag,labial,11
+Austronesian,Yapese,NA,short.lag,coronal,22
+Austronesian,Yapese,NA,short.lag,dorsal,56
+Austronesian,Yapese,NA,short.lag,labial,20
+Burushaski,Burushaski,NA,long.lag,coronal,54.6
+Burushaski,Burushaski,NA,long.lag,dorsal,41.1
+Burushaski,Burushaski,NA,long.lag,labial,34.86
+Burushaski,Burushaski,NA,short.lag,coronal,5.075
+Burushaski,Burushaski,NA,short.lag,dorsal,5.425
+Burushaski,Burushaski,NA,short.lag,labial,0
+Chapacura-Wanham,Wari',NA,short.lag,coronal,26
+Chapacura-Wanham,Wari',NA,short.lag,dorsal,54
+Chapacura-Wanham,Wari',NA,short.lag,labial,19
+Creole,Hawaiian Creole,NA,short.lag,coronal,25.7
+Creole,Hawaiian Creole,NA,short.lag,dorsal,37.5
+Creole,Hawaiian Creole,NA,short.lag,labial,30.1
+Dravidian,Tamil,Singaporean,short.lag,coronal,7.15
+Dravidian,Tamil,Singaporean,short.lag,dorsal,31.805
+Dravidian,Tamil,Singaporean,short.lag,labial,9.955
+Dravidian,Tamil,NA,lead,coronal,-78
+Dravidian,Tamil,NA,lead,dorsal,-62
+Dravidian,Tamil,NA,lead,labial,-74
+Dravidian,Telugu,NA,lead,coronal,-112.5675
+Dravidian,Telugu,NA,lead,dorsal,-107.243333333333
+Dravidian,Telugu,NA,lead,labial,-124.445833333333
+Dravidian,Telugu,NA,short.lag,coronal,24.655
+Dravidian,Telugu,NA,short.lag,dorsal,51.4191666666667
+Dravidian,Telugu,NA,short.lag,labial,20.9366666666667
+Eskimo-Aleut,Aleut (Eastern),NA,long.lag,coronal,59
+Eskimo-Aleut,Aleut (Eastern),NA,long.lag,dorsal,76.5
+Eskimo-Aleut,Aleut (Western),NA,long.lag,coronal,76
+Eskimo-Aleut,Aleut (Western),NA,long.lag,dorsal,93.5
+Ijoid,Defaka,NA,short.lag,coronal,20
+Ijoid,Defaka,NA,short.lag,dorsal,30
+Ijoid,Defaka,NA,short.lag,labial,18
+Indo-European,Afrikaans,NA,lead,coronal,-50.54
+Indo-European,Afrikaans,NA,lead,dorsal,-45.835
+Indo-European,Afrikaans,NA,short.lag,coronal,15.91
+Indo-European,Afrikaans,NA,short.lag,dorsal,13.27
+Indo-European,Armenian (Eastern),NA,long.lag,coronal,59
+Indo-European,Armenian (Eastern),NA,long.lag,dorsal,98
+Indo-European,Armenian (Eastern),NA,long.lag,labial,78
+Indo-European,Armenian (Eastern),NA,short.lag,coronal,15
+Indo-European,Armenian (Eastern),NA,short.lag,dorsal,30
+Indo-European,Armenian (Eastern),NA,short.lag,labial,3
+Indo-European,Assamese,Nalbaria,lead,coronal,-46
+Indo-European,Assamese,Nalbaria,lead,dorsal,-35
+Indo-European,Assamese,Nalbaria,lead,labial,-59
+Indo-European,Assamese,Nalbaria,long.lag,coronal,65
+Indo-European,Assamese,Nalbaria,long.lag,dorsal,79
+Indo-European,Assamese,Nalbaria,long.lag,labial,58
+Indo-European,Assamese,Nalbaria,short.lag,coronal,21
+Indo-European,Assamese,Nalbaria,short.lag,dorsal,34
+Indo-European,Assamese,Nalbaria,short.lag,labial,24
+Indo-European,Bengali,Bangla,long.lag,coronal,36.035
+Indo-European,Bengali,Bangla,long.lag,dorsal,46.63
+Indo-European,Bengali,Bangla,long.lag,labial,32.11
+Indo-European,Bengali,Bangla,short.lag,coronal,3.335
+Indo-European,Bengali,Bangla,short.lag,dorsal,5.825
+Indo-European,Bengali,Bangla,short.lag,labial,3.175
+Indo-European,Bengali,East Bengali,long.lag,coronal,57
+Indo-European,Bengali,East Bengali,long.lag,dorsal,73
+Indo-European,Bengali,East Bengali,short.lag,coronal,19
+Indo-European,Bengali,East Bengali,short.lag,dorsal,29
+Indo-European,Bengali,East Bengali,short.lag,labial,14.5
+Indo-European,Catalan,NA,short.lag,coronal,27
+Indo-European,Catalan,NA,short.lag,dorsal,47
+Indo-European,Catalan,NA,short.lag,labial,23
+Indo-European,Croatian,NA,short.lag,coronal,20
+Indo-European,Croatian,NA,short.lag,dorsal,41
+Indo-European,Croatian,NA,short.lag,labial,17.5
+Indo-European,Danish,NA,long.lag,coronal,85.6
+Indo-European,Danish,NA,long.lag,dorsal,69.7
+Indo-European,Danish,NA,long.lag,labial,67.6333333333333
+Indo-European,Danish,NA,short.lag,coronal,21.7666666666667
+Indo-European,Danish,NA,short.lag,dorsal,30.7333333333333
+Indo-European,Danish,NA,short.lag,labial,16.5666666666667
+Indo-European,Dutch,NA,long.lag,coronal,43.9594444444444
+Indo-European,Dutch,NA,long.lag,dorsal,49.7077777777778
+Indo-European,Dutch,NA,long.lag,labial,29.6377777777778
+Indo-European,Dutch,NA,short.lag,coronal,17.74125
+Indo-European,Dutch,NA,short.lag,dorsal,27
+Indo-European,Dutch,NA,short.lag,labial,9.99875
+Indo-European,English,American,lead,coronal,-25.4690625
+Indo-European,English,American,lead,dorsal,-6.66666666666667
+Indo-European,English,American,lead,labial,-23.216875
+Indo-European,English,American,long.lag,coronal,93.0065
+Indo-European,English,American,long.lag,dorsal,89.4333333333333
+Indo-European,English,American,long.lag,labial,76.8175
+Indo-European,English,Australian,long.lag,coronal,92
+Indo-European,English,Australian,long.lag,labial,77
+Indo-European,English,Australian,short.lag,coronal,5
+Indo-European,English,Australian,short.lag,labial,0
+Indo-European,English,British,long.lag,coronal,73.7
+Indo-European,English,British,long.lag,dorsal,81.65
+Indo-European,English,British,long.lag,labial,56.7
+Indo-European,English,British,short.lag,coronal,25.35
+Indo-European,English,British,short.lag,dorsal,34.65
+Indo-European,English,British,short.lag,labial,18
+Indo-European,English,Canadian,long.lag,coronal,70
+Indo-European,English,Canadian,long.lag,dorsal,90
+Indo-European,English,Canadian,long.lag,labial,62
+Indo-European,English,Indian,short.lag,coronal,36.02
+Indo-European,English,Indian,short.lag,labial,24.4
+Indo-European,English,Singaporean,lead,NA,-13.9833333333333
+Indo-European,English,Singaporean,lead,coronal,-8.03333333333333
+Indo-European,English,Singaporean,lead,dorsal,8.44333333333333
+Indo-European,English,Singaporean,long.lag,NA,29.9266666666667
+Indo-European,English,Singaporean,long.lag,coronal,35.7233333333333
+Indo-European,English,Singaporean,long.lag,dorsal,49.5633333333333
+Indo-European,English,NA,long.lag,coronal,69.6110119047619
+Indo-European,English,NA,long.lag,dorsal,74.54375
+Indo-European,English,NA,long.lag,labial,58.9227380952381
+Indo-European,English,NA,short.lag,coronal,11.375
+Indo-European,English,NA,short.lag,dorsal,24.3345833333333
+Indo-European,English,NA,short.lag,labial,10.9416666666667
+Indo-European,French,Burkina Faso,lead,coronal,-58
+Indo-European,French,Burkina Faso,lead,labial,-66
+Indo-European,French,Burkina Faso,short.lag,coronal,26
+Indo-European,French,Burkina Faso,short.lag,dorsal,31
+Indo-European,French,Burkina Faso,short.lag,labial,17
+Indo-European,French,Canadian,lead,coronal,-83.25
+Indo-European,French,Canadian,lead,dorsal,-61.75
+Indo-European,French,Canadian,lead,labial,-95
+Indo-European,French,Canadian,long.lag,coronal,41.5
+Indo-European,French,Canadian,long.lag,dorsal,52
+Indo-European,French,Canadian,long.lag,labial,26.25
+Indo-European,French,Ivory Coast,lead,coronal,-62
+Indo-European,French,Ivory Coast,lead,dorsal,-54
+Indo-European,French,Ivory Coast,lead,labial,-65
+Indo-European,French,Ivory Coast,short.lag,coronal,23
+Indo-European,French,Ivory Coast,short.lag,dorsal,29
+Indo-European,French,Ivory Coast,short.lag,labial,12
+Indo-European,French,Mali,lead,coronal,-61
+Indo-European,French,Mali,lead,dorsal,-42
+Indo-European,French,Mali,lead,labial,-55
+Indo-European,French,Mali,short.lag,coronal,23
+Indo-European,French,Mali,short.lag,dorsal,33
+Indo-European,French,Mali,short.lag,labial,14
+Indo-European,French,Paris,short.lag,coronal,18.5
+Indo-European,French,Paris,short.lag,dorsal,25.5
+Indo-European,French,Paris,short.lag,labial,11.5
+Indo-European,French,Quebec,short.lag,coronal,28
+Indo-European,French,Quebec,short.lag,dorsal,35
+Indo-European,French,Quebec,short.lag,labial,20
+Indo-European,French,Senegal,lead,coronal,-70
+Indo-European,French,Senegal,lead,dorsal,-49
+Indo-European,French,Senegal,lead,labial,-65
+Indo-European,French,Senegal,short.lag,coronal,20
+Indo-European,French,Senegal,short.lag,dorsal,29
+Indo-European,French,Senegal,short.lag,labial,15
+Indo-European,French,NA,short.lag,coronal,23
+Indo-European,French,NA,short.lag,dorsal,32
+Indo-European,French,NA,short.lag,labial,18
+Indo-European,Gaelic (Scots),NA,long.lag,coronal,65
+Indo-European,Gaelic (Scots),NA,long.lag,dorsal,73
+Indo-European,Gaelic (Scots),NA,long.lag,labial,63
+Indo-European,Gaelic (Scots),NA,short.lag,coronal,22
+Indo-European,Gaelic (Scots),NA,short.lag,dorsal,28
+Indo-European,Gaelic (Scots),NA,short.lag,labial,13
+Indo-European,German,Austrian,long.lag,coronal,47.125
+Indo-European,German,Austrian,long.lag,dorsal,81.93
+Indo-European,German,Austrian,long.lag,labial,40.29
+Indo-European,German,Austrian,short.lag,coronal,19.79
+Indo-European,German,Austrian,short.lag,dorsal,28.45
+Indo-European,German,Austrian,short.lag,labial,31.625
+Indo-European,German,Swiss,short.lag,coronal,19.765
+Indo-European,German,Swiss,short.lag,dorsal,28.24
+Indo-European,German,Swiss,short.lag,labial,15.945
+Indo-European,German,NA,long.lag,coronal,67.2222222222222
+Indo-European,German,NA,long.lag,dorsal,77.5
+Indo-European,German,NA,long.lag,labial,54.5555555555556
+Indo-European,German,NA,short.lag,coronal,12.5555555555556
+Indo-European,German,NA,short.lag,dorsal,26
+Indo-European,German,NA,short.lag,labial,4.11111111111111
+Indo-European,Greek (Modern),NA,lead,coronal,-133
+Indo-European,Greek (Modern),NA,lead,labial,-132
+Indo-European,Greek (Modern),NA,short.lag,coronal,19.8
+Indo-European,Greek (Modern),NA,short.lag,dorsal,49.2
+Indo-European,Greek (Modern),NA,short.lag,labial,15.3
+Indo-European,Hindi,NA,lead,coronal,-39.625
+Indo-European,Hindi,NA,lead,dorsal,-19.984
+Indo-European,Hindi,NA,lead,labial,-38.5
+Indo-European,Hindi,NA,long.lag,coronal,63.375
+Indo-European,Hindi,NA,long.lag,dorsal,88.848
+Indo-European,Hindi,NA,long.lag,labial,68.6666666666667
+Indo-European,Hindi,NA,short.lag,coronal,17.625
+Indo-European,Hindi,NA,short.lag,dorsal,32.97
+Indo-European,Hindi,NA,short.lag,labial,14
+Indo-European,Icelandic,Northern Dialect,long.lag,coronal,57.6666666666667
+Indo-European,Icelandic,Northern Dialect,long.lag,dorsal,63
+Indo-European,Icelandic,Northern Dialect,long.lag,labial,49.3333333333333
+Indo-European,Icelandic,Northern Dialect,short.lag,coronal,17
+Indo-European,Icelandic,Northern Dialect,short.lag,dorsal,27
+Indo-European,Icelandic,Northern Dialect,short.lag,labial,12
+Indo-European,Icelandic,Southern Dialect,long.lag,coronal,57.25
+Indo-European,Icelandic,Southern Dialect,long.lag,dorsal,64
+Indo-European,Icelandic,Southern Dialect,long.lag,labial,52.5
+Indo-European,Icelandic,Southern Dialect,short.lag,coronal,17
+Indo-European,Icelandic,Southern Dialect,short.lag,dorsal,27.6666666666667
+Indo-European,Icelandic,Southern Dialect,short.lag,labial,12
+Indo-European,Italian,Calabrian,short.lag,coronal,17.6
+Indo-European,Italian,Calabrian,short.lag,dorsal,19.2
+Indo-European,Italian,Calabrian,short.lag,labial,13.1
+Indo-European,Italian,NA,lead,coronal,-90
+Indo-European,Italian,NA,lead,dorsal,-86
+Indo-European,Italian,NA,lead,labial,-87
+Indo-European,Italian,NA,short.lag,coronal,18
+Indo-European,Italian,NA,short.lag,dorsal,32
+Indo-European,Italian,NA,short.lag,labial,11.5
+Indo-European,Kurmanji,NA,long.lag,coronal,44.975
+Indo-European,Kurmanji,NA,long.lag,dorsal,58.2575
+Indo-European,Kurmanji,NA,long.lag,labial,41.4425
+Indo-European,Marathi,NA,long.lag,coronal,81.25
+Indo-European,Marathi,NA,long.lag,dorsal,102.5
+Indo-European,Marathi,NA,long.lag,labial,110
+Indo-European,Marathi,NA,short.lag,coronal,12.125
+Indo-European,Marathi,NA,short.lag,dorsal,28.5
+Indo-European,Marathi,NA,short.lag,labial,11
+Indo-European,Nepali,NA,lead,coronal,-84.21
+Indo-European,Nepali,NA,lead,dorsal,-67.55
+Indo-European,Nepali,NA,lead,labial,-78.51
+Indo-European,Nepali,NA,long.lag,coronal,59.31
+Indo-European,Nepali,NA,long.lag,dorsal,83.56
+Indo-European,Nepali,NA,long.lag,labial,69.43
+Indo-European,Nepali,NA,short.lag,coronal,10.97
+Indo-European,Nepali,NA,short.lag,dorsal,26.79
+Indo-European,Nepali,NA,short.lag,labial,5.99
+Indo-European,Norwegian,Bergen-Trondheim-Eastern (avg),long.lag,coronal,64
+Indo-European,Norwegian,Bergen-Trondheim-Eastern (avg),long.lag,dorsal,74
+Indo-European,Norwegian,Bergen-Trondheim-Eastern (avg),long.lag,labial,56
+Indo-European,Norwegian,Bergen-Trondheim-Eastern (avg),short.lag,coronal,12
+Indo-European,Norwegian,Bergen-Trondheim-Eastern (avg),short.lag,dorsal,24
+Indo-European,Norwegian,Bergen-Trondheim-Eastern (avg),short.lag,labial,9
+Indo-European,Norwegian,NA,long.lag,coronal,72.14
+Indo-European,Norwegian,NA,long.lag,dorsal,71.725
+Indo-European,Norwegian,NA,long.lag,labial,64.055
+Indo-European,Norwegian,NA,short.lag,coronal,18.8
+Indo-European,Norwegian,NA,short.lag,dorsal,23.665
+Indo-European,Norwegian,NA,short.lag,labial,14.61
+Indo-European,Pahari,NA,lead,coronal,-101.5
+Indo-European,Pahari,NA,lead,dorsal,-109
+Indo-European,Pahari,NA,lead,labial,-94
+Indo-European,Pahari,NA,long.lag,coronal,59.5
+Indo-European,Pahari,NA,long.lag,dorsal,77
+Indo-European,Pahari,NA,long.lag,labial,66
+Indo-European,Pahari,NA,short.lag,coronal,17
+Indo-European,Pahari,NA,short.lag,dorsal,27
+Indo-European,Pahari,NA,short.lag,labial,19
+Indo-European,Panjabi,NA,long.lag,coronal,65
+Indo-European,Panjabi,NA,long.lag,dorsal,67.5
+Indo-European,Panjabi,NA,long.lag,labial,77.5
+Indo-European,Panjabi,NA,short.lag,coronal,23
+Indo-European,Panjabi,NA,short.lag,dorsal,36.5
+Indo-European,Panjabi,NA,short.lag,labial,24.5
+Indo-European,Pashto,Khyber Pakhtoonkhaw province,short.lag,coronal,21.04
+Indo-European,Pashto,Khyber Pakhtoonkhaw province,short.lag,dorsal,33.58
+Indo-European,Pashto,Khyber Pakhtoonkhaw province,short.lag,labial,14.94
+Indo-European,Persian,NA,lead,coronal,-42.8
+Indo-European,Persian,NA,lead,dorsal,-36.8666666666667
+Indo-European,Persian,NA,lead,labial,-34.2
+Indo-European,Persian,NA,long.lag,coronal,78.395
+Indo-European,Persian,NA,long.lag,dorsal,95.035
+Indo-European,Persian,NA,long.lag,labial,68.12
+Indo-European,Polish,NA,lead,coronal,-80.95
+Indo-European,Polish,NA,lead,dorsal,-63.55
+Indo-European,Polish,NA,lead,labial,-83.1
+Indo-European,Polish,NA,short.lag,coronal,29.0011111111111
+Indo-European,Polish,NA,short.lag,dorsal,45.0422222222222
+Indo-European,Polish,NA,short.lag,labial,26.1144444444444
+Indo-European,Portuguese (Brazilian),NA,lead,coronal,-40.4877777777778
+Indo-European,Portuguese (Brazilian),NA,lead,dorsal,-19.7744444444444
+Indo-European,Portuguese (Brazilian),NA,lead,labial,-42.3233333333333
+Indo-European,Portuguese (Brazilian),NA,short.lag,coronal,18.85
+Indo-European,Portuguese (Brazilian),NA,short.lag,dorsal,49.1875
+Indo-European,Portuguese (Brazilian),NA,short.lag,labial,21.5325
+Indo-European,Portuguese (European),NA,lead,coronal,-36.5
+Indo-European,Portuguese (European),NA,lead,dorsal,-28
+Indo-European,Portuguese (European),NA,lead,labial,-43
+Indo-European,Portuguese (European),NA,short.lag,coronal,28
+Indo-European,Portuguese (European),NA,short.lag,dorsal,51
+Indo-European,Portuguese (European),NA,short.lag,labial,20
+Indo-European,Russian,St. Petersburg,lead,coronal,-75
+Indo-European,Russian,St. Petersburg,lead,dorsal,-78
+Indo-European,Russian,St. Petersburg,lead,labial,-70
+Indo-European,Russian,St. Petersburg,short.lag,coronal,20
+Indo-European,Russian,St. Petersburg,short.lag,dorsal,38
+Indo-European,Russian,St. Petersburg,short.lag,labial,18
+Indo-European,Serbian,NA,lead,coronal,-118.12
+Indo-European,Serbian,NA,lead,dorsal,-112.15
+Indo-European,Serbian,NA,lead,labial,-117.42
+Indo-European,Serbian,NA,short.lag,coronal,24.25
+Indo-European,Serbian,NA,short.lag,dorsal,53.865
+Indo-European,Serbian,NA,short.lag,labial,23.335
+Indo-European,Sindhi,NA,long.lag,coronal,42.35
+Indo-European,Sindhi,NA,long.lag,dorsal,72.5
+Indo-European,Sindhi,NA,long.lag,labial,20.15
+Indo-European,Sindhi,NA,short.lag,coronal,16.85
+Indo-European,Sindhi,NA,short.lag,dorsal,22
+Indo-European,Sindhi,NA,short.lag,labial,14.5
+Indo-European,Spanish,Argentina,short.lag,coronal,15
+Indo-European,Spanish,Argentina,short.lag,dorsal,25
+Indo-European,Spanish,Argentina,short.lag,labial,10
+Indo-European,Spanish,Castilian,lead,coronal,-91.6
+Indo-European,Spanish,Castilian,lead,dorsal,-73.7
+Indo-European,Spanish,Castilian,lead,labial,-91.5
+Indo-European,Spanish,Castilian,short.lag,coronal,14
+Indo-European,Spanish,Castilian,short.lag,dorsal,26.5
+Indo-European,Spanish,Castilian,short.lag,labial,13.1
+Indo-European,Spanish,Guatamalan,lead,coronal,-108.8
+Indo-European,Spanish,Guatamalan,lead,dorsal,-101.4
+Indo-European,Spanish,Guatamalan,lead,labial,-120.3
+Indo-European,Spanish,Guatamalan,short.lag,coronal,10.3
+Indo-European,Spanish,Guatamalan,short.lag,dorsal,25.7
+Indo-European,Spanish,Guatamalan,short.lag,labial,9.8
+Indo-European,Spanish,Peruvian,lead,coronal,-110.2
+Indo-European,Spanish,Peruvian,lead,dorsal,-98.4
+Indo-European,Spanish,Peruvian,lead,labial,-101.7
+Indo-European,Spanish,Peruvian,short.lag,coronal,16.2
+Indo-European,Spanish,Peruvian,short.lag,dorsal,29.7
+Indo-European,Spanish,Peruvian,short.lag,labial,15.2
+Indo-European,Spanish,Puerto.Rico,lead,coronal,-110
+Indo-European,Spanish,Puerto.Rico,lead,dorsal,-108
+Indo-European,Spanish,Puerto.Rico,lead,labial,-138
+Indo-European,Spanish,Puerto.Rico,short.lag,coronal,9
+Indo-European,Spanish,Puerto.Rico,short.lag,dorsal,29
+Indo-European,Spanish,Puerto.Rico,short.lag,labial,4
+Indo-European,Spanish,Rural,lead,coronal,-83
+Indo-European,Spanish,Rural,lead,dorsal,-86
+Indo-European,Spanish,Rural,lead,labial,-89
+Indo-European,Spanish,Rural,short.lag,coronal,22
+Indo-European,Spanish,Rural,short.lag,dorsal,38
+Indo-European,Spanish,Rural,short.lag,labial,17
+Indo-European,Spanish,Urban,lead,coronal,-64
+Indo-European,Spanish,Urban,lead,dorsal,-59
+Indo-European,Spanish,Urban,lead,labial,-70
+Indo-European,Spanish,Urban,short.lag,coronal,21
+Indo-European,Spanish,Urban,short.lag,dorsal,33
+Indo-European,Spanish,Urban,short.lag,labial,16
+Indo-European,Spanish,Venezuelen,lead,coronal,-78.5
+Indo-European,Spanish,Venezuelen,lead,dorsal,-63.9
+Indo-European,Spanish,Venezuelen,lead,labial,-95.2
+Indo-European,Spanish,Venezuelen,short.lag,coronal,20.6
+Indo-European,Spanish,Venezuelen,short.lag,dorsal,32.6
+Indo-European,Spanish,Venezuelen,short.lag,labial,14
+Indo-European,Spanish,Yucatan,short.lag,coronal,22
+Indo-European,Spanish,Yucatan,short.lag,dorsal,34
+Indo-European,Spanish,Yucatan,short.lag,labial,17.2
+Indo-European,Spanish,NA,lead,coronal,-80
+Indo-European,Spanish,NA,lead,dorsal,-68
+Indo-European,Spanish,NA,lead,labial,-82
+Indo-European,Spanish,NA,short.lag,coronal,20.8600666666667
+Indo-European,Spanish,NA,short.lag,dorsal,34.1970666666667
+Indo-European,Spanish,NA,short.lag,labial,17.4013333333333
+Indo-European,Swedish,Arjeplog,long.lag,coronal,52.75
+Indo-European,Swedish,Arjeplog,long.lag,dorsal,61.75
+Indo-European,Swedish,Arjeplog,long.lag,labial,46
+Indo-European,Swedish,Arjeplog,short.lag,coronal,15.75
+Indo-European,Swedish,Arjeplog,short.lag,dorsal,29.75
+Indo-European,Swedish,Arjeplog,short.lag,labial,12
+Indo-European,Swedish,NA,lead,coronal,-66.7675
+Indo-European,Swedish,NA,lead,dorsal,-53.1825
+Indo-European,Swedish,NA,lead,labial,-86.6325
+Indo-European,Swedish,NA,long.lag,coronal,59.41
+Indo-European,Swedish,NA,long.lag,dorsal,74.03
+Indo-European,Swedish,NA,long.lag,labial,47.645
+Indo-European,Welsh,Patagonia,short.lag,coronal,40
+Indo-European,Welsh,Patagonia,short.lag,dorsal,36
+Indo-European,Welsh,Patagonia,short.lag,labial,17
+Indo-European,Welsh,Wales,long.lag,coronal,55
+Indo-European,Welsh,Wales,long.lag,dorsal,49
+Indo-European,Welsh,Wales,long.lag,labial,31
+Japanese,Japanese,NA,lead,coronal,-46.5
+Japanese,Japanese,NA,lead,dorsal,-25
+Japanese,Japanese,NA,lead,labial,-72
+Japanese,Japanese,NA,long.lag,coronal,29.1666666666667
+Japanese,Japanese,NA,long.lag,dorsal,59.2333333333333
+Japanese,Japanese,NA,long.lag,labial,33.6666666666667
+Kartvelian,Georgian,NA,long.lag,coronal,62.85
+Kartvelian,Georgian,NA,long.lag,dorsal,70.05
+Kartvelian,Georgian,NA,long.lag,labial,62.2
+Kartvelian,Georgian,NA,short.lag,coronal,11.9
+Kartvelian,Georgian,NA,short.lag,dorsal,20.75
+Kartvelian,Georgian,NA,short.lag,labial,8.95
+Kordofanian,Moro,NA,lead,coronal,-80.415
+Kordofanian,Moro,NA,lead,dorsal,-81.71
+Kordofanian,Moro,NA,lead,labial,-78.25
+Kordofanian,Moro,NA,short.lag,coronal,17.31
+Kordofanian,Moro,NA,short.lag,dorsal,39.75
+Kordofanian,Moro,NA,short.lag,labial,20.45
+Korean,Korean,NA,long.lag,coronal,55.6879166666667
+Korean,Korean,NA,long.lag,dorsal,74.7
+Korean,Korean,NA,long.lag,labial,57.8229166666667
+Mayan,Itzaj Maya,NA,short.lag,coronal,26
+Mayan,Itzaj Maya,NA,short.lag,dorsal,42
+Mayan,Itzaj Maya,NA,short.lag,labial,24
+Mayan,Mam (Southern),NA,long.lag,dorsal,47.5
+Mayan,Mam (Southern),NA,long.lag,labial,13.8
+Mayan,Mopan Maya,NA,long.lag,coronal,34
+Mayan,Mopan Maya,NA,long.lag,dorsal,50
+Mayan,Mopan Maya,NA,long.lag,labial,73
+Mayan,Tzutujil,NA,short.lag,coronal,17
+Mayan,Tzutujil,NA,short.lag,dorsal,29
+Mayan,Tzutujil,NA,short.lag,labial,12
+Mayan,Yukateko Maya,NA,long.lag,coronal,18
+Mayan,Yukateko Maya,NA,long.lag,dorsal,64
+Mayan,Yukateko Maya,NA,long.lag,labial,25
+Muskogean,Chickasaw,NA,short.lag,coronal,21.5
+Muskogean,Chickasaw,NA,short.lag,dorsal,36
+Muskogean,Chickasaw,NA,short.lag,labial,12.5
+Na-Dene,Apache (Western),NA,long.lag,coronal,58
+Na-Dene,Apache (Western),NA,long.lag,dorsal,80
+Na-Dene,Apache (Western),NA,short.lag,coronal,15
+Na-Dene,Apache (Western),NA,short.lag,dorsal,31
+Na-Dene,Apache (Western),NA,short.lag,labial,13
+Na-Dene,Hupa,NA,long.lag,coronal,82
+Na-Dene,Hupa,NA,long.lag,dorsal,84
+Na-Dene,Hupa,NA,short.lag,coronal,16
+Na-Dene,Hupa,NA,short.lag,dorsal,35.5
+Na-Dene,Hupa,NA,short.lag,labial,11
+Na-Dene,Navajo,NA,long.lag,coronal,130
+Na-Dene,Navajo,NA,long.lag,dorsal,154
+Na-Dene,Navajo,NA,short.lag,coronal,6
+Na-Dene,Navajo,NA,short.lag,dorsal,45
+Na-Dene,Navajo,NA,short.lag,labial,12
+Na-Dene,Tlingit,NA,long.lag,coronal,120
+Na-Dene,Tlingit,NA,long.lag,dorsal,128
+Na-Dene,Tlingit,NA,short.lag,coronal,18
+Na-Dene,Tlingit,NA,short.lag,dorsal,29
+Nakh-Daghestanian,Udi,NA,long.lag,coronal,54
+Nakh-Daghestanian,Udi,NA,long.lag,dorsal,64
+Nakh-Daghestanian,Udi,NA,long.lag,labial,53
+Niger-Congo,Bowiri,NA,short.lag,coronal,18
+Niger-Congo,Bowiri,NA,short.lag,dorsal,39
+Niger-Congo,Bowiri,NA,short.lag,labial,17
+Niger-Congo,Igbo,NA,short.lag,coronal,18
+Niger-Congo,Igbo,NA,short.lag,dorsal,32
+Niger-Congo,Igbo,NA,short.lag,labial,19
+Niger-Congo,Shekgalagari,NA,lead,coronal,-80.7
+Niger-Congo,Shekgalagari,NA,lead,dorsal,-83.6
+Niger-Congo,Shekgalagari,NA,lead,labial,-88.5
+Niger-Congo,Shekgalagari,NA,long.lag,coronal,63.7
+Niger-Congo,Shekgalagari,NA,long.lag,dorsal,81.3
+Niger-Congo,Shekgalagari,NA,long.lag,labial,64.5
+Niger-Congo,Shekgalagari,NA,short.lag,coronal,12.6
+Niger-Congo,Shekgalagari,NA,short.lag,dorsal,31.8
+Niger-Congo,Shekgalagari,NA,short.lag,labial,14.1
+Niger-Congo,Swati,NA,long.lag,coronal,90.9
+Niger-Congo,Swati,NA,long.lag,dorsal,106.5
+Niger-Congo,Swati,NA,long.lag,labial,97.17
+Niger-Congo,Swati,NA,short.lag,coronal,19.25
+Niger-Congo,Swati,NA,short.lag,dorsal,24.67
+Niger-Congo,Swati,NA,short.lag,labial,18.58
+Niger-Congo,Tswana,Sengwato,long.lag,coronal,78
+Niger-Congo,Tswana,Sengwato,long.lag,dorsal,77.9
+Niger-Congo,Tswana,Sengwato,long.lag,labial,69.2
+Niger-Congo,Tswana,Sengwato,short.lag,coronal,3.5
+Niger-Congo,Tswana,Sengwato,short.lag,dorsal,13.5
+Niger-Congo,Tswana,Sengwato,short.lag,labial,2.6
+Niger-Congo,Xhosa,NA,long.lag,coronal,102
+Niger-Congo,Xhosa,NA,long.lag,dorsal,105
+Niger-Congo,Xhosa,NA,long.lag,labial,92
+Niger-Congo,Xhosa,NA,short.lag,coronal,11
+Niger-Congo,Xhosa,NA,short.lag,dorsal,26.5
+Niger-Congo,Xhosa,NA,short.lag,labial,10
+Niger-Congo,Zulu,NA,long.lag,coronal,77.1933333333333
+Niger-Congo,Zulu,NA,long.lag,dorsal,82.26
+Niger-Congo,Zulu,NA,long.lag,labial,64.74
+Niger-Congo,Zulu,NA,short.lag,coronal,10.7866666666667
+Niger-Congo,Zulu,NA,short.lag,dorsal,26.83
+Niger-Congo,Zulu,NA,short.lag,labial,12.8666666666667
+Northwest Caucasian,Kabardian,Turkish,lead,coronal,-18
+Northwest Caucasian,Kabardian,Turkish,lead,dorsal,-25
+Northwest Caucasian,Kabardian,Turkish,lead,labial,-38
+Northwest Caucasian,Kabardian,Turkish,long.lag,coronal,51
+Northwest Caucasian,Kabardian,Turkish,long.lag,dorsal,71.6666666666667
+Northwest Caucasian,Kabardian,Turkish,long.lag,labial,36
+Oto-Manguean,Mazatec (Jalapa),NA,long.lag,coronal,63
+Oto-Manguean,Mazatec (Jalapa),NA,long.lag,dorsal,80
+Oto-Manguean,Mazatec (Jalapa),NA,short.lag,coronal,11
+Oto-Manguean,Mazatec (Jalapa),NA,short.lag,dorsal,23
+Oto-Manguean,Zapotec (Yalalag),NA,lead,coronal,-106
+Oto-Manguean,Zapotec (Yalalag),NA,lead,dorsal,-130
+Oto-Manguean,Zapotec (Yalalag),NA,lead,labial,-90
+Oto-Manguean,Zapotec (Yalalag),NA,short.lag,coronal,27
+Oto-Manguean,Zapotec (Yalalag),NA,short.lag,dorsal,45.5
+Oto-Manguean,Zapotec (Yalalag),NA,short.lag,labial,15
+Pama-Nyungan,Warlpiri,NA,short.lag,coronal,19.66
+Pama-Nyungan,Warlpiri,NA,short.lag,dorsal,44.545
+Pama-Nyungan,Warlpiri,NA,short.lag,labial,26.5
+Pama-Nyungan,Yan-Nhangu,NA,short.lag,coronal,22.7633333333333
+Pama-Nyungan,Yan-Nhangu,NA,short.lag,dorsal,31.83
+Pama-Nyungan,Yan-Nhangu,NA,short.lag,labial,27.29
+Quechuan,Quechua (Bolivian),South.Bolivian,long.lag,coronal,126
+Quechuan,Quechua (Bolivian),South.Bolivian,long.lag,dorsal,123
+Quechuan,Quechua (Bolivian),South.Bolivian,long.lag,labial,115
+Quechuan,Quechua (Bolivian),South.Bolivian,short.lag,coronal,21
+Quechuan,Quechua (Bolivian),South.Bolivian,short.lag,dorsal,34
+Quechuan,Quechua (Bolivian),South.Bolivian,short.lag,labial,15
+Quechuan,Quechua (Cuzco),Cuzco,short.lag,coronal,24
+Quechuan,Quechua (Cuzco),Cuzco,short.lag,dorsal,42
+Quechuan,Quechua (Cuzco),Cuzco,short.lag,labial,19
+Quechuan,Quichua,NA,lead,coronal,-97
+Quechuan,Quichua,NA,lead,dorsal,-89
+Quechuan,Quichua,NA,lead,labial,-100
+Quechuan,Quichua,NA,short.lag,coronal,23
+Quechuan,Quichua,NA,short.lag,dorsal,28
+Quechuan,Quichua,NA,short.lag,labial,16
+Salishan,Montana Salish,NA,long.lag,coronal,24.5
+Salishan,Montana Salish,NA,long.lag,dorsal,50.75
+Salishan,Montana Salish,NA,long.lag,labial,21
+Sino-Tibetan,Bunun,NA,short.lag,coronal,11
+Sino-Tibetan,Bunun,NA,short.lag,dorsal,25
+Sino-Tibetan,Bunun,NA,short.lag,labial,11
+Sino-Tibetan,Burmese,NA,long.lag,coronal,67
+Sino-Tibetan,Burmese,NA,long.lag,dorsal,76
+Sino-Tibetan,Burmese,NA,long.lag,labial,46
+Sino-Tibetan,Burmese,NA,short.lag,coronal,15.5
+Sino-Tibetan,Burmese,NA,short.lag,dorsal,31
+Sino-Tibetan,Burmese,NA,short.lag,labial,5
+Sino-Tibetan,Cantonese,NA,long.lag,coronal,75
+Sino-Tibetan,Cantonese,NA,long.lag,dorsal,87
+Sino-Tibetan,Cantonese,NA,long.lag,labial,77
+Sino-Tibetan,Cantonese,NA,short.lag,coronal,14
+Sino-Tibetan,Cantonese,NA,short.lag,dorsal,34
+Sino-Tibetan,Cantonese,NA,short.lag,labial,9
+Sino-Tibetan,Fukienese,NA,long.lag,coronal,79.5
+Sino-Tibetan,Fukienese,NA,long.lag,dorsal,95.5
+Sino-Tibetan,Fukienese,NA,long.lag,labial,80
+Sino-Tibetan,Fukienese,NA,short.lag,coronal,9.5
+Sino-Tibetan,Fukienese,NA,short.lag,dorsal,21.5
+Sino-Tibetan,Fukienese,NA,short.lag,labial,4.5
+Sino-Tibetan,Galo,NA,lead,coronal,-98
+Sino-Tibetan,Galo,NA,lead,dorsal,-74
+Sino-Tibetan,Galo,NA,lead,labial,-89
+Sino-Tibetan,Galo,NA,short.lag,coronal,12
+Sino-Tibetan,Galo,NA,short.lag,dorsal,26
+Sino-Tibetan,Galo,NA,short.lag,labial,8
+Sino-Tibetan,Hakha Lai,NA,short.lag,coronal,20.5
+Sino-Tibetan,Hakha Lai,NA,short.lag,dorsal,24
+Sino-Tibetan,Hakha Lai,NA,short.lag,labial,12.3
+Sino-Tibetan,Hakka,NA,long.lag,coronal,59.2433333333333
+Sino-Tibetan,Hakka,NA,long.lag,dorsal,75.5433333333333
+Sino-Tibetan,Hakka,NA,long.lag,labial,61.4266666666667
+Sino-Tibetan,Hakka,NA,short.lag,coronal,15.3783333333333
+Sino-Tibetan,Hakka,NA,short.lag,dorsal,27.0116666666667
+Sino-Tibetan,Hakka,NA,short.lag,labial,14.4283333333333
+Sino-Tibetan,Hokkien,Singaporean,long.lag,coronal,74.75
+Sino-Tibetan,Hokkien,Singaporean,long.lag,dorsal,79.37
+Sino-Tibetan,Hokkien,Singaporean,long.lag,labial,78.68
+Sino-Tibetan,Hokkien,Singaporean,short.lag,coronal,3.13
+Sino-Tibetan,Hokkien,Singaporean,short.lag,dorsal,14.15
+Sino-Tibetan,Hokkien,Singaporean,short.lag,labial,2.25
+Sino-Tibetan,Karen (Sgaw),NA,lead,coronal,-49
+Sino-Tibetan,Karen (Sgaw),NA,lead,labial,-70.5
+Sino-Tibetan,Karen (Sgaw),NA,long.lag,coronal,70.8333333333333
+Sino-Tibetan,Karen (Sgaw),NA,long.lag,dorsal,91.25
+Sino-Tibetan,Karen (Sgaw),NA,long.lag,labial,74.1666666666667
+Sino-Tibetan,Karen (Sgaw),NA,short.lag,coronal,15
+Sino-Tibetan,Karen (Sgaw),NA,short.lag,dorsal,31.9166666666667
+Sino-Tibetan,Karen (Sgaw),NA,short.lag,labial,14
+Sino-Tibetan,Khonoma Angami,NA,lead,coronal,-176.5
+Sino-Tibetan,Khonoma Angami,NA,lead,dorsal,-143.5
+Sino-Tibetan,Khonoma Angami,NA,lead,labial,-160.5
+Sino-Tibetan,Khonoma Angami,NA,long.lag,coronal,62.5
+Sino-Tibetan,Khonoma Angami,NA,long.lag,dorsal,99.5
+Sino-Tibetan,Khonoma Angami,NA,long.lag,labial,83
+Sino-Tibetan,Khonoma Angami,NA,short.lag,coronal,11.5
+Sino-Tibetan,Khonoma Angami,NA,short.lag,dorsal,24.5
+Sino-Tibetan,Khonoma Angami,NA,short.lag,labial,10
+Sino-Tibetan,Kurtop,NA,lead,coronal,-63.8466666666667
+Sino-Tibetan,Kurtop,NA,lead,dorsal,-29.7725
+Sino-Tibetan,Kurtop,NA,lead,labial,-64.95
+Sino-Tibetan,Kurtop,NA,long.lag,coronal,46.4775
+Sino-Tibetan,Kurtop,NA,long.lag,dorsal,79.055
+Sino-Tibetan,Kurtop,NA,long.lag,labial,46.685
+Sino-Tibetan,Mandarin,Singaporean,long.lag,coronal,106.62
+Sino-Tibetan,Mandarin,Singaporean,long.lag,dorsal,79.41
+Sino-Tibetan,Mandarin,Singaporean,long.lag,labial,85.67
+Sino-Tibetan,Mandarin,Singaporean,short.lag,coronal,4.56
+Sino-Tibetan,Mandarin,Singaporean,short.lag,dorsal,19.46
+Sino-Tibetan,Mandarin,Singaporean,short.lag,labial,3.45
+Sino-Tibetan,Mandarin,NA,long.lag,coronal,88.32
+Sino-Tibetan,Mandarin,NA,long.lag,dorsal,96.8
+Sino-Tibetan,Mandarin,NA,long.lag,labial,85.14
+Sino-Tibetan,Mandarin,NA,short.lag,coronal,12.475
+Sino-Tibetan,Mandarin,NA,short.lag,dorsal,22.35
+Sino-Tibetan,Mandarin,NA,short.lag,labial,9.49166666666667
+Sino-Tibetan,Stau,NA,lead,coronal,-116.7
+Sino-Tibetan,Stau,NA,lead,dorsal,-126.3
+Sino-Tibetan,Stau,NA,lead,labial,-122.5
+Sino-Tibetan,Wu (Shanghainese),NA,long.lag,coronal,101
+Sino-Tibetan,Wu (Shanghainese),NA,long.lag,labial,117
+Sino-Tibetan,Wu (Shanghainese),NA,short.lag,coronal,20
+Sino-Tibetan,Wu (Shanghainese),NA,short.lag,labial,10
+Tai-Kadai,Tai Khamti,NA,long.lag,coronal,55
+Tai-Kadai,Tai Khamti,NA,long.lag,dorsal,80
+Tai-Kadai,Tai Khamti,NA,long.lag,labial,59
+Tai-Kadai,Tai Khamti,NA,short.lag,coronal,15
+Tai-Kadai,Tai Khamti,NA,short.lag,dorsal,26
+Tai-Kadai,Tai Khamti,NA,short.lag,labial,18
+Tai-Kadai,Thai,NA,long.lag,coronal,70.5
+Tai-Kadai,Thai,NA,long.lag,dorsal,97.5
+Tai-Kadai,Thai,NA,long.lag,labial,68.5
+Tai-Kadai,Thai,NA,short.lag,coronal,8.5
+Tai-Kadai,Thai,NA,short.lag,dorsal,24
+Tai-Kadai,Thai,NA,short.lag,labial,5.5
+Tangkic,Kayardild,NA,short.lag,coronal,25.8033333333333
+Tangkic,Kayardild,NA,short.lag,dorsal,29.99
+Tangkic,Kayardild,NA,short.lag,labial,22.53
+Ticuna,Tikuna,Yari-Tikuna,lead,coronal,-140
+Ticuna,Tikuna,Yari-Tikuna,lead,dorsal,-131
+Ticuna,Tikuna,Yari-Tikuna,lead,labial,-140
+Ticuna,Tikuna,Yari-Tikuna,short.lag,coronal,10
+Ticuna,Tikuna,Yari-Tikuna,short.lag,dorsal,34
+Ticuna,Tikuna,Yari-Tikuna,short.lag,labial,6
+Tucanoan,Waimaha,NA,long.lag,coronal,96
+Tucanoan,Waimaha,NA,long.lag,dorsal,81.5
+Tucanoan,Waimaha,NA,short.lag,coronal,22
+Tucanoan,Waimaha,NA,short.lag,dorsal,22
+Tupian,Arara,NA,short.lag,coronal,18
+Tupian,Arara,NA,short.lag,dorsal,37
+Tupian,Arara,NA,short.lag,labial,15
+Tupian,Munduruku,NA,lead,coronal,-105
+Tupian,Munduruku,NA,lead,labial,-109
+Tupian,Munduruku,NA,short.lag,coronal,15.15
+Tupian,Munduruku,NA,short.lag,dorsal,35.975
+Tupian,Munduruku,NA,short.lag,labial,11.975
+Uralic,Finnish,NA,short.lag,coronal,11
+Uralic,Finnish,NA,short.lag,dorsal,20
+Uralic,Finnish,NA,short.lag,labial,9
+Uralic,Hungarian,NA,lead,coronal,-95.1
+Uralic,Hungarian,NA,lead,dorsal,-89.6
+Uralic,Hungarian,NA,lead,labial,-94.6
+Uralic,Hungarian,NA,short.lag,coronal,19.8
+Uralic,Hungarian,NA,short.lag,dorsal,41.52
+Uralic,Hungarian,NA,short.lag,labial,15.34
+Uto-Aztecan,Paiute (Northern),NA,short.lag,coronal,14.4
+Uto-Aztecan,Paiute (Northern),NA,short.lag,dorsal,37.81
+Uto-Aztecan,Paiute (Northern),NA,short.lag,labial,16.25
+Uto-Aztecan,Shoshoni,NA,short.lag,coronal,17.55
+Uto-Aztecan,Shoshoni,NA,short.lag,dorsal,51.93
+Uto-Aztecan,Shoshoni,NA,short.lag,labial,20.47
+Uto-Aztecan,Ute,Southern,short.lag,coronal,14
+Uto-Aztecan,Ute,Southern,short.lag,dorsal,18
+Uto-Aztecan,Ute,Southern,short.lag,labial,6
+Wakashan,Kwakw'ala,NA,long.lag,coronal,60.3333333333333
+Wakashan,Kwakw'ala,NA,long.lag,dorsal,91.8
+Wakashan,Kwakw'ala,NA,long.lag,labial,68.3333333333333
+Wakashan,Kwakw'ala,NA,short.lag,coronal,6
+Wakashan,Kwakw'ala,NA,short.lag,dorsal,23.8
+Wakashan,Kwakw'ala,NA,short.lag,labial,2.33333333333333
