@@ -84,15 +84,18 @@ def gmm_eval(gmm, X_data, labels, set=''):
 
 
 ### Plotting ###
-def line_plot(X, labels, probs):
+def line_plot(X, labels, probs, fig_num=0):
+    plt.figure(fig_num)
     #todo: vert distrib classes slightly for clearer view
 #    plt.scatter(X, len(X)*[1], c=labels, s=40, cmap='viridis')
     size = 50 * probs.max(1) ** 2  # square emphasizes differences
-    plt.scatter(X, len(X)*[1], c=labels, cmap='viridis', s=size)
-    plt.show()
+    plt.scatter(X, labels, c=labels, cmap='viridis', s=size, alpha=0.1)
+
     return
 
-def gaussian_plot(gmm, X, labels):
+def gaussian_plot(gmm, X, labels, fig_num=0):
+    plt.figure(fig_num)
+
     means   = gmm.means_.flatten()
     stdevs  = [ np.sqrt(x) for x in gmm.covars_.flatten() ]
     weights = gmm.weights_.flatten()
@@ -114,8 +117,7 @@ def gaussian_plot(gmm, X, labels):
     for i, (mu, sd, p) in enumerate(zip(means, stdevs, weights)):
         plt.plot(x, ss.norm.pdf(x, mu, sd), color=colors[i])
 
-    plt.show()
-    return 
+    return
 
 
 ### Main ###   
@@ -129,17 +131,23 @@ if __name__ == '__main__':
 
     data, cross_labels = avg_data_reader(cross_dict, dcat, dpoa)
     X_train, y_train, X_val, y_val, X_test, y_test = data_split(data, cross_labels)
-
     ##train##
     gmm, train_probs, train_predict = gmm_train(X_train, num_classes)
-
-    ##plot##
-    line_plot(X_train, train_predict, train_probs)
-    gaussian_plot(gmm, X_train, train_predict)
 
     ##eval##
     xe_train = gmm_eval(gmm, X_train, y_train, 'train')
     xe_val   = gmm_eval(gmm, X_val, y_val, 'val')
     xe_test  = gmm_eval(gmm, X_test, y_test, 'test')
+
+    ##plot##
+    y_labels = [np.argmax(y) for y in y_train]
+    line_plot(X_train, train_predict, train_probs, fig_num=0)
+    line_plot(X_train, y_labels, train_probs, fig_num=1)
+
+    gaussian_plot(gmm, X_train, train_predict, fig_num=2)
+    gaussian_plot(gmm, X_train, y_labels, fig_num=3)
+
+    plt.show()
+    
 
     print('--done--')
