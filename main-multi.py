@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 import pandas as pd
-from sklearn.cross_validation import train_test_split
-from sklearn.mixture import GMM
+from sklearn.model_selection import train_test_split
+from sklearn.mixture import GaussianMixture
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import seaborn as sns; sns.set()
@@ -49,18 +49,18 @@ def data_split(X, y, train_split=0.8, dev_split=0.1, test_split=0.1):
     assert train_split+dev_split+test_split == 1, "data splits do not add up to 1"
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_split, random_state=1, stratify=y)
-    X_train, X_val, y_train, y_val   = train_test_split(X_train, y_train, test_size=dev_split, random_state=1, stratify=y)
+    X_train, X_val, y_train, y_val   = train_test_split(X_train, y_train, test_size=dev_split, random_state=1, stratify=y_train)
 
     return X_train, y_train, X_val, y_val, X_test, y_test
 
 
 ### GMM Modeling ###
 def gmm_train(X_train, y_train, num_gaussians, num_vars, covariance='diag', components=1):
-    gmm = GMM(n_components=components, n_iter=20, covariance_type=covariance)
+    gmm = GaussianMixture(n_components=components, max_iter=20, covariance_type=covariance)
 
     X = np.reshape(np.stack(X_train, axis=0), (-1,num_vars)) #reshape to (data_size,1) from (data_size,)
-    gmm.means_init = np.array([X[y_train == i].mean(axis=0) #initialize gaussian means to true means
-                               for i in range(num_gaussians)])
+#    gmm.means_init = np.array([X[y_train == i].mean(axis=0) #initialize gaussian means to true means
+#                               for i in range(num_gaussians)])
 
 
     gmm.fit(X)
@@ -108,19 +108,19 @@ def gaussian_plot(gmm, X, labels, fig_num=0):
     plt.figure(fig_num)
     
     means   = gmm.means_.flatten()
-    covars  = gmm.covars_[0]
-    print(means)
-    print(covars)
+    covars  = gmm.covariances_.flatten()
+#    print(means)
+#    print(covars)
     
     y = ss.multivariate_normal.pdf(X, means, covars)
 
     plt.plot(X, y, 'k--')
-    print(y[0:10])
-#    plt.scatter(X_flat, len(X_flat)*[0], c=labels_flat, s=40, cmap='viridis')
+#    print(y[0:10])
+##    plt.scatter(X_flat, len(X_flat)*[0], c=labels_flat, s=40, cmap='viridis')
     
     start = 0.0
     stop  = 1.0
-    num_lines = len(gmm.covars_) #num_classes
+    num_lines = len(gmm.means_) #num_classes
 
     cm_subsection = np.linspace(start, stop, num_lines)
     colors = [ cm.viridis(x) for x in cm_subsection ]
