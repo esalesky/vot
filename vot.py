@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.cross_validation import train_test_split
-from sklearn.mixture import GMM
+from sklearn.mixture import GMM, DPGMM
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import seaborn as sns; sns.set()
@@ -56,12 +56,15 @@ def data_split(X, y, train_split=0.8, dev_split=0.1, test_split=0.1):
 
 
 ### GMM Modeling ###
-def gmm_train(X_train, y_train, num_classes, covariance='diag', components=3):
-    gmm = GMM(n_components=components, n_iter=20, covariance_type=covariance)
+def gmm_train(X_train, y_train, num_classes, model=GMM, covariance='diag', components=3, n_iter=50):
+    gmm = model(n_components=components, n_iter=20, covariance_type=covariance)
+    print('-- Model: %s --' % model.__name__)
     
-    X = np.reshape(np.stack(X_train, axis=0), (-1,1)) #reshape to (data_size,1) from (data_size,)
-    gmm.means_init = np.array([X[y_train == i].mean(axis=0) #initialize gaussian means to true means
-                               for i in range(num_classes)])
+    X = np.reshape(np.stack(X_train, axis=0), (-1,1)) #reshape to (data_size,1) from (data_size,) for univariate.
+    #TODO: set this up for both uni and multivariate
+
+#    gmm.means_init = np.array([X[y_train == i].mean(axis=0) #initialize gaussian means to true means
+#                               for i in range(num_classes)])
 
 
     gmm.fit(X)
@@ -101,17 +104,20 @@ def gaussian_plot(gmm, X, labels, true_labels=True, fig_num=0):
     plt.figure(fig_num)
 
     means   = gmm.means_.flatten()
-    stdevs  = [ np.sqrt(x) for x in gmm.covars_.flatten() ]
+    stdevs  = [ np.sqrt(x.flatten()[0]) for x in gmm._get_covars() ] #note: in all cases so far, has been wrapped in one extra list layer, hence 0
     weights = gmm.weights_.flatten()
 
     x = np.arange(min(X), max(X), 5) #range between data min and max by 5    
     pdfs = [p * ss.norm.pdf(x, mu, sd) for mu, sd, p in zip(means, stdevs, weights)]
     density = np.sum(np.array(pdfs), axis=0)
 
-    #get three colors
+    #get colors
     start = 0.0
     stop  = 1.0
-    num_lines = len(gmm.covars_) #num_classes
+    num_lines = len(gmm.means_) #num_classes.
+    #note: for dpgmm only predicted gaussians will be plot, but gmm.means_ etc is len(max num allowed gaussians)
+    print(np.unique(labels))    #(debug) prints idxs of final gaussians relative to init
+    print('num classes: %d' % len(np.unique(labels)))
     cm_subsection = np.linspace(start, stop, num_lines)
     colors = [ cm.viridis(x) for x in cm_subsection ]
 
@@ -119,9 +125,9 @@ def gaussian_plot(gmm, X, labels, true_labels=True, fig_num=0):
     if true_labels:
         mean_order = np.argsort(means)
         sorted_colors = [colors[i] for i in mean_order]
-        color_labels  = [ sorted_colors[i] for i in labels ]
+        color_labels  = [sorted_colors[i] for i in labels]
     else:
-        color_labels = labels
+        color_labels  = [colors[i] for i in labels]
 
     #plot gmm
     plt.plot(x, density, 'k--')
@@ -129,45 +135,8 @@ def gaussian_plot(gmm, X, labels, true_labels=True, fig_num=0):
 
     #plot individual gaussians
     for i, (mu, sd, p) in enumerate(zip(means, stdevs, weights)):
+        if not any(x == i for x in labels):
+            continue
         plt.plot(x, ss.norm.pdf(x, mu, sd), color=colors[i])
 
     return
-
-
-### Main ###   
-if __name__ == '__main__':
-    ##data prep##
-    #todo: make this easier to modify to test other class groupings
-    dcat = {'lead':0, 'short.lag':1, 'long.lag':2}
-    dpoa = {'labial':0, 'coronal':0, 'dorsal':0}
-#    cross_dict = {(0,0):0,(0,1):1,(0,2):2,(1,0):3,(1,1):4,(1,2):5,(2,0):6,(2,1):7,(2,2):8}
-    cross_dict = {}
-    for idx, p in enumerate(product(set(dcat.values()), set(dpoa.values()))):
-        cross_dict[p] = idx
-    num_classes = len(cross_dict)
-
-    data, cross_labels = avg_data_reader(cross_dict, dcat, dpoa)
-    X_train, y_train, X_val, y_val, X_test, y_test = data_split(data, cross_labels)
-    y_labels = [np.argmax(y) for y in y_train]
-
-    ##train##
-    gmm, train_probs, train_predict = gmm_train(X_train, y_labels, num_classes, components=3)
-
-    X = np.reshape(np.stack(X_train, axis=0), (-1,1))
-    print(gmm.aic(X))
-    print(gmm.bic(X))
-    ##eval##
-#    xe_train = gmm_eval(gmm, X_train, y_train, 'train')
-#    xe_val   = gmm_eval(gmm, X_val, y_val, 'val')
-#    xe_test  = gmm_eval(gmm, X_test, y_test, 'test')
-
-    ##plot##
-    line_plot(X_train, train_predict, train_probs, fig_num=0)
-    line_plot(X_train, y_labels, train_probs, fig_num=1)
-
-    gaussian_plot(gmm, X_train, train_predict, true_labels=False, fig_num=2)
-    gaussian_plot(gmm, X_train, y_labels, true_labels=True, fig_num=3)
-    plt.show()
-    
-
-    print('--done--')
