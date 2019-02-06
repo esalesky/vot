@@ -18,15 +18,12 @@ if __name__ == '__main__':
     y_labels = [np.argmax(y) for y in y_train]
 
     ##train##
-    gmm, train_probs, train_predict = gmm_train(X_train, y_labels, num_classes, model=DPGMM, covariance='diag', components=9, n_iter=-1) #note: components = max # of components for dpgmm
-    #NOTE: full has unexpected behavior for univariate.
-    #NOTE: with n_iter=-1, will sometimes truncate early with 2 gaussians & converged=False. tuning n_iter instead varies need n_iter wildly and isn't stable at converged=True. 
-    #TODO: try sklearn 0.20 updated class, make sure changing covariance etc does not change results.
+    gmm, train_probs, train_predict = gmm_train(X_train, y_labels, num_classes, model=BayesianGaussianMixture, covariance='diag', components=9, n_iter=150)
         
     ##eval##
     X = np.reshape(np.stack(X_train, axis=0), (-1,1))
-    print('AIC: %f' % gmm.aic(X))
-    print('BIC: %f' % gmm.bic(X))
+#    print('AIC: %f' % gmm.aic(X)) #BayesianGaussianMixture has no aic, bic
+#    print('BIC: %f' % gmm.bic(X))
 #    xe_train = gmm_eval(gmm, X_train, y_train, 'train')
 #    xe_val   = gmm_eval(gmm, X_val, y_val, 'val')
 #    xe_test  = gmm_eval(gmm, X_test, y_test, 'test')

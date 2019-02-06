@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 import pandas as pd
-from sklearn.cross_validation import train_test_split
-from sklearn.mixture import GMM, DPGMM
+from sklearn.model_selection import train_test_split
+from sklearn.mixture import GaussianMixture, BayesianGaussianMixture
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import seaborn as sns; sns.set()
@@ -50,14 +50,14 @@ def data_split(X, y, train_split=0.8, dev_split=0.1, test_split=0.1):
     assert train_split+dev_split+test_split == 1, "data splits do not add up to 1"
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_split, random_state=1, stratify=y)
-    X_train, X_val, y_train, y_val   = train_test_split(X_train, y_train, test_size=dev_split, random_state=1, stratify=y)
+    X_train, X_val, y_train, y_val   = train_test_split(X_train, y_train, test_size=dev_split, random_state=1, stratify=y_train)
 
     return X_train, y_train, X_val, y_val, X_test, y_test
 
 
 ### GMM Modeling ###
-def gmm_train(X_train, y_train, num_classes, model=GMM, covariance='diag', components=3, n_iter=50):
-    gmm = model(n_components=components, n_iter=20, covariance_type=covariance)
+def gmm_train(X_train, y_train, num_classes, model=GaussianMixture, covariance='diag', components=3, n_iter=100):
+    gmm = model(n_components=components, max_iter=n_iter, covariance_type=covariance)
     print('-- Model: %s --' % model.__name__)
     
     X = np.reshape(np.stack(X_train, axis=0), (-1,1)) #reshape to (data_size,1) from (data_size,) for univariate.
@@ -104,7 +104,7 @@ def gaussian_plot(gmm, X, labels, true_labels=True, fig_num=0):
     plt.figure(fig_num)
 
     means   = gmm.means_.flatten()
-    stdevs  = [ np.sqrt(x.flatten()[0]) for x in gmm._get_covars() ] #note: in all cases so far, has been wrapped in one extra list layer, hence 0
+    stdevs  = [np.sqrt(x) for x in gmm.covariances_.flatten()]
     weights = gmm.weights_.flatten()
 
     x = np.arange(min(X), max(X), 5) #range between data min and max by 5    

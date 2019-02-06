@@ -18,7 +18,7 @@ if __name__ == '__main__':
     y_labels = [np.argmax(y) for y in y_train]
 
     ##train##
-    gmm, train_probs, train_predict = gmm_train(X_train, y_labels, num_classes, model=GMM, components=3, n_iter=1)
+    gmm, train_probs, train_predict = gmm_train(X_train, y_labels, num_classes, model=GaussianMixture, components=3, n_iter=100)
 
     ##eval##
     X = np.reshape(np.stack(X_train, axis=0), (-1,1))
