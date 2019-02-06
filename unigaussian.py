@@ -29,11 +29,11 @@ if __name__ == '__main__':
 #    xe_test  = gmm_eval(gmm, X_test, y_test, 'test')
 
     ##plot##
-    line_plot(X_train, train_predict, train_probs, fig_num=1)
-    line_plot(X_train, y_labels, train_probs, fig_num=2)
+    line_plot(X_train, train_predict, train_probs, fig_num=1, title='VOT distribution. %d Gaussians, predicted classes'%num_classes)
+    line_plot(X_train, y_labels, train_probs, fig_num=2, title='VOT distribution. %d Gaussians, true classes'%num_classes)
 
-    gaussian_plot(gmm, X_train, train_predict, true_labels=False, fig_num=3)
-    gaussian_plot(gmm, X_train, y_labels, true_labels=True, fig_num=4)
+    gaussian_plot(gmm, X_train, train_predict, true_labels=False, fig_num=3, title='%d Gaussians, predicted classes'%num_classes)
+    gaussian_plot(gmm, X_train, y_labels, true_labels=True, fig_num=4, title='%d Gaussians, true classes'%num_classes)
     plt.show()
     
 

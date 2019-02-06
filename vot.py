@@ -93,15 +93,20 @@ def gmm_eval(gmm, X_data, labels, set=''):
 
 
 ### Plotting ###
-def line_plot(X, labels, probs, fig_num=0):
+def line_plot(X, labels, probs, fig_num=0, title=''):
     plt.figure(fig_num)
     plt.yticks([])
+    plt.xlabel('VOT')
+    plt.title(title) 
     plt.scatter(X, len(X)*[0], c=labels, cmap='viridis', s=40, alpha=0.1)
 
     return
 
-def gaussian_plot(gmm, X, labels, true_labels=True, fig_num=0):
+def gaussian_plot(gmm, X, labels, true_labels=True, fig_num=0, title=''):
     plt.figure(fig_num)
+    plt.ylabel('p(X)')
+    plt.xlabel('VOT')
+    plt.title(title)
 
     means   = gmm.means_.flatten()
     stdevs  = [np.sqrt(x) for x in gmm.covariances_.flatten()]

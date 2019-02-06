@@ -29,7 +29,7 @@ if __name__ == '__main__':
 #    xe_test  = gmm_eval(gmm, X_test, y_test, 'test')
 
     ##plot##
-    gaussian_plot(gmm, X_train, train_predict, true_labels=False, fig_num=1)
+    gaussian_plot(gmm, X_train, train_predict, true_labels=False, fig_num=1, title='Inferred Gaussians, predicted classes')
 
     plt.show()
     
