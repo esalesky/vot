@@ -87,18 +87,17 @@ def gmm_eval(gmm, X, labels, set=''):
 
     return xe
 
+def gmm_score(gmm, data, set=''):
+    avglogprob = gmm.score(data)
+    print('%s avg logprob: %.3f' % (set, avglogprob))
+
+    return avglogprob
+
 
 ### Plotting ###
 def line_plot(X, labels, probs, fig_num=0):
     plt.figure(fig_num)
     #todo: vert distrib classes slightly for clearer view
-#    plt.scatter(X, len(X)*[1], c=labels, s=40, cmap='viridis')
-    size = 50 * probs.max(1) ** 2  # square emphasizes differences
-    print("--")
-    print(len(X))
-    print(len(labels))
-    print(X[0:10])
-    print(labels[0:10])
     plt.scatter(X, labels, c=labels, cmap='viridis', s=size, alpha=0.1)
 
     return
@@ -109,14 +108,10 @@ def gaussian_plot(gmm, X, labels, fig_num=0):
     
     means   = gmm.means_.flatten()
     covars  = gmm.covariances_.flatten()
-#    print(means)
-#    print(covars)
     
     y = ss.multivariate_normal.pdf(X, means, covars)
 
     plt.plot(X, y, 'k--')
-#    print(y[0:10])
-##    plt.scatter(X_flat, len(X_flat)*[0], c=labels_flat, s=40, cmap='viridis')
     
     start = 0.0
     stop  = 1.0
@@ -151,16 +146,21 @@ if __name__ == '__main__':
     ##train##
     gmm, train_probs, train_predict = gmm_train(X_train, y_labels, num_gaussians, num_gaussians, covariance='diag') #TODO fix ( num gaussians, num variables)
 
-    print(gmm.aic(X_train))
-    print(gmm.bic(X_train))
-
     ##eval##
+    gmm_score(gmm, X_train, 'train')
+    gmm_score(gmm, X_val, '  val')
+    gmm_score(gmm, X_test, ' test')
+
+    print('AIC: %f' % gmm.aic(X_train))
+    print('BIC: %f' % gmm.bic(X_train))
+
 #    xe_train = gmm_eval(gmm, X_train, y_train, 'train')
 #    xe_val   = gmm_eval(gmm, X_val, y_val, 'val')
 #    xe_test  = gmm_eval(gmm, X_test, y_test, 'test')
 
     ##plot##
-    gaussian_plot(gmm, X_train, train_predict, fig_num=1) #note: train_predict will of course have 1 class (num_components=1)
+#    gaussian_plot(gmm, X_train, train_predict, fig_num=1) #note: train_predict will of course have 1 class (num_components=1)
+
 
     plt.show()
     

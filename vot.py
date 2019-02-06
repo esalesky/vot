@@ -91,6 +91,13 @@ def gmm_eval(gmm, X_data, labels, set=''):
 
     return xe
 
+def gmm_score(gmm, uni_data, set=''):
+    data = np.reshape(np.stack(uni_data, axis=0), (-1,1))
+    avglogprob = gmm.score(data)
+    print('%s avg logprob: %.3f' % (set, avglogprob))
+
+    return avglogprob
+    
 
 ### Plotting ###
 def line_plot(X, labels, probs, fig_num=0, title=''):

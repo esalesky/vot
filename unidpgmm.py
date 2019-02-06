@@ -19,11 +19,18 @@ if __name__ == '__main__':
 
     ##train##
     gmm, train_probs, train_predict = gmm_train(X_train, y_labels, num_classes, model=BayesianGaussianMixture, covariance='diag', components=9, n_iter=150)
-        
+    #TODO: model definition here so different params can be passed for each if necessary? probs a good idea
+    #e.g. weight_concentration_prior_type='dirichlet_process'
+    
     ##eval##
-    X = np.reshape(np.stack(X_train, axis=0), (-1,1))
+    gmm_score(gmm, X_train, 'train')
+    gmm_score(gmm, X_val, 'val')
+    gmm_score(gmm, X_test, 'test')
+
+#    X = np.reshape(np.stack(X_train, axis=0), (-1,1))
 #    print('AIC: %f' % gmm.aic(X)) #BayesianGaussianMixture has no aic, bic
 #    print('BIC: %f' % gmm.bic(X))
+
 #    xe_train = gmm_eval(gmm, X_train, y_train, 'train')
 #    xe_val   = gmm_eval(gmm, X_val, y_val, 'val')
 #    xe_test  = gmm_eval(gmm, X_test, y_test, 'test')
