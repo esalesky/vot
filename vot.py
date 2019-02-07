@@ -93,10 +93,10 @@ def gmm_eval(gmm, X_data, labels, set=''):
 
 def gmm_score(gmm, uni_data, set=''):
     data = np.reshape(np.stack(uni_data, axis=0), (-1,1))
-    avglogprob = gmm.score(data)
-    print('%s avg logprob: %.3f' % (set, avglogprob))
+    avgll = gmm.score(data)
+    print('%s avg ll: %.3f' % (set, avglogprob))
 
-    return avglogprob
+    return avgll
     
 
 ### Plotting ###

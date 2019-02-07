@@ -91,10 +91,10 @@ def gmm_eval(gmm, X, labels, set=''):
     return xe
 
 def model_score(model, data, set=''):
-    avglogprob = model.score(data)
-    print('%s avg logprob: %.3f' % (set, avglogprob))
+    avgloglike = model.score(data)
+    print('%s avg ll: %.3f' % (set, avgloglike))
 
-    return avglogprob
+    return avgloglike
 
 
 ### Plotting ###
@@ -113,13 +113,29 @@ def lang_likelihood_plot(gmm, X, labels, fig_num=0):
     return
 
 ### Factor Analysis ###
-def factor_analysis(data, num_features):
-    print('-- Model: FactorAnalysis --')
-    fa = FactorAnalysis(random_state = 1)
+def factor_analysis(data, num_features, components=1):
+    print('-- Model: FactorAnalysis, numcomp: %d --' % components)
+    fa = FactorAnalysis(n_components=components, random_state = 1)
     X  = np.reshape(np.stack(data, axis=0), (-1,num_features)) #reshape to (data_size,num_vars) 
     fa.fit(X)
 
     return fa
+
+### BIC ###
+def calc_bic(data, model):
+    # [n_components x n_features] + [1*n_features]
+    n_params = (model.components_.size) + data.shape[1]
+    bic = (-2 * model.score(data) * data.shape[0] +
+           n_params * np.log(data.shape[0]))
+    return bic
+
+### AIC ###
+def calc_aic(data, model):
+    # [n_components x n_features] + [1*n_features]
+    n_params = (model.components_.size) + data.shape[1]
+    aic = (-2 * model.score(data) * data.shape[0] + 2 * n_params)
+    return aic
+
 
 ### Main ###   
 if __name__ == '__main__':
@@ -131,15 +147,18 @@ if __name__ == '__main__':
     X_train = np.array(X_train)
     X_val = np.array(X_val)
     X_test = np.array(X_test)
-    
+
     ##fit factor analysis##
-    fa = factor_analysis(X_train, num_features)
+    fa = factor_analysis(X_train, num_features, components=1)
 
     ##eval##
     model_score(fa, X_train, 'train')
     model_score(fa, X_val, '  val')
     model_score(fa, X_test, ' test')
-
+    print('val AIC: %f' % calc_aic(X_val, fa))
+    print('val BIC: %f' % calc_bic(X_val, fa))
+    print('test AIC: %f' % calc_aic(X_test, fa))
+    print('test BIC: %f' % calc_bic(X_test, fa))
 
     ##train gmm##
     gmm, train_probs, train_predict = gmm_train(X_train, num_features, model=GaussianMixture, components=1, covariance='full') 
@@ -149,8 +168,22 @@ if __name__ == '__main__':
     model_score(gmm, X_val, '  val')
     model_score(gmm, X_test, ' test')
 
-    print('AIC: %f' % gmm.aic(X_train))
-    print('BIC: %f' % gmm.bic(X_train))
+    print('val AIC: %f' % gmm.aic(X_val))
+    print('val BIC: %f' % gmm.bic(X_val))
+    print('test AIC: %f' % gmm.aic(X_test))
+    print('test BIC: %f' % gmm.bic(X_test))
+
+    gmm, train_probs, train_predict = gmm_train(X_train, num_features, model=GaussianMixture, components=1, covariance='diag') 
+
+    ##eval##
+    model_score(gmm, X_train, 'train')
+    model_score(gmm, X_val, '  val')
+    model_score(gmm, X_test, ' test')
+
+    print('val AIC: %f' % gmm.aic(X_val))
+    print('val BIC: %f' % gmm.bic(X_val))
+    print('test AIC: %f' % gmm.aic(X_test))
+    print('test BIC: %f' % gmm.bic(X_test))
 
     ##plot##
 #    lang_likelihood_plot(gmm, X, labels, fig_num=1)
