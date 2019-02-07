@@ -19,7 +19,7 @@ def avg_data_reader(cross_dict, dcat, dpoa, fname='data/ChodroffGoldenWilson2019
     full = pd.read_csv('data/ChodroffGoldenWilson2019_vot_avg.csv', delimiter = ',', na_filter=False)            
     full['lang'] = full[['family', 'language', 'dialect']].apply(lambda x: '_'.join(x), axis=1)
     full = full.drop(['family', 'language', 'dialect'], axis=1)
-    g = full.groupby(['lang','vot.category']).filter(lambda x: len(x) == 3) #drops languages w/o all 3 poa per vot.cat
+    g = full.groupby(['lang','vot.category']).filter(lambda x: len(x) == 3) #drops language cats w/o all 3 poa per vot.cat
 
     data  = []
     langs = []
