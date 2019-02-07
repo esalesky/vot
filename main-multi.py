@@ -8,6 +8,8 @@ from matplotlib import cm
 import seaborn as sns; sns.set()
 import scipy.stats as ss
 from itertools import product
+from sklearn.decomposition import FactorAnalysis
+
 
 ### Data Handling ###
 def avg_data_reader(fname='data/ChodroffGoldenWilson2019_vot_avg.csv'):
@@ -88,8 +90,8 @@ def gmm_eval(gmm, X, labels, set=''):
 
     return xe
 
-def gmm_score(gmm, data, set=''):
-    avglogprob = gmm.score(data)
+def model_score(model, data, set=''):
+    avglogprob = model.score(data)
     print('%s avg logprob: %.3f' % (set, avglogprob))
 
     return avglogprob
@@ -110,34 +112,49 @@ def lang_likelihood_plot(gmm, X, labels, fig_num=0):
     
     return
 
+### Factor Analysis ###
+def factor_analysis(data, num_features):
+    print('-- Model: FactorAnalysis --')
+    fa = FactorAnalysis(random_state = 1)
+    X  = np.reshape(np.stack(data, axis=0), (-1,num_features)) #reshape to (data_size,num_vars) 
+    fa.fit(X)
+
+    return fa
 
 ### Main ###   
 if __name__ == '__main__':
     ##data prep##
-    #todo: make this easier to modify to test other class groupings
-    
     data, lang_labels = avg_data_reader()
     num_features = len(data[0])
 
     X_train, y_train, X_val, y_val, X_test, y_test = data_split(data, lang_labels)
     X_train = np.array(X_train)
+    X_val = np.array(X_val)
+    X_test = np.array(X_test)
     
-    ##train##
+    ##fit factor analysis##
+    fa = factor_analysis(X_train, num_features)
+
+    ##eval##
+    model_score(fa, X_train, 'train')
+    model_score(fa, X_val, '  val')
+    model_score(fa, X_test, ' test')
+
+
+    ##train gmm##
     gmm, train_probs, train_predict = gmm_train(X_train, num_features, model=GaussianMixture, components=1, covariance='full') 
 
     ##eval##
-    gmm_score(gmm, X_train, 'train')
-    gmm_score(gmm, X_val, '  val')
-    gmm_score(gmm, X_test, ' test')
+    model_score(gmm, X_train, 'train')
+    model_score(gmm, X_val, '  val')
+    model_score(gmm, X_test, ' test')
 
     print('AIC: %f' % gmm.aic(X_train))
     print('BIC: %f' % gmm.bic(X_train))
 
     ##plot##
 #    lang_likelihood_plot(gmm, X, labels, fig_num=1)
-
-
-    plt.show()
+#    plt.show()
     
 
     print('--done--')
