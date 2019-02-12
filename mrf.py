@@ -73,7 +73,8 @@ class MRF(object):
         logZ = self.logZ()
         for V in self.subsets(self.calV):
             p_V = np.exp(self.score(V) - logZ)
-            dphi += p_V * self.phi
+            for i in V:
+                dphi[i] += p_V
         return dphi, dpsi
 
     def fd(self, eps=1e-5):
