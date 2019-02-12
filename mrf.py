@@ -18,9 +18,9 @@ class MRF(object):
 
         print(self.logZ())
         dphi, dpsi = self.dlogZ(np.zeros_like(self.phi), np.zeros_like(self.psi))
-        print(dphi)
-        print(dpsi)
-        print(self.fd())
+        dphi_fd, dpsi_fd = self.fd()
+        print(np.allclose(dphi, dphi_fd, atol=1e-5))
+        print(np.allclose(dpsi, dpsi_fd, atol=1e-2))
         exit(0)
         
         # check that it sums 1
