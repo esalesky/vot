@@ -17,7 +17,11 @@ class MRF(object):
         self.psi = np.random.randn(len(self.calV), len(self.calV))
 
         print(self.logZ())
-
+        dphi, dpsi = self.dlogZ(np.zeros_like(self.phi), np.zeros_like(self.psi))
+        print(dphi)
+        print(self.fd())
+        exit(0)
+        
         # check that it sums 1
         logZ = self.logZ()
         total = -np.inf
@@ -64,18 +68,27 @@ class MRF(object):
             logZ = logsumexp(np.asarray([logZ, self.score(V)]))
         return logZ
 
-    def dlogZ(self):
-        """
-        TODO : Liz
-        """
-        pass
+    def dlogZ(self, dphi, dpsi):
+        """ compute gradient of the log partition function """
+        logZ = self.logZ()
+        for V in self.subsets(self.calV):
+            p_V = np.exp(self.score(V) - logZ)
+            dphi += p_V * self.phi
+        return dphi, dpsi
 
-    def finite_diff(self):
+    def fd(self, eps=1e-5):
         """ 
-        TODO: Liz
         write a function to check the gradient 
         """
-        pass
+        dphi = np.zeros((len(self.calV)))
+        for i in xrange(len(self.calV)):
+            self.phi[i] += eps
+            val1 = self.logZ()
+            self.phi[i] -= 2*eps
+            val2 = self.logZ()
+            self.phi[i] += eps
+            dphi[i] = (val2-val1)/(2*eps)
+        return dphi
 
     def train(self):
         """
