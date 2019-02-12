@@ -19,6 +19,7 @@ class MRF(object):
         print(self.logZ())
         dphi, dpsi = self.dlogZ(np.zeros_like(self.phi), np.zeros_like(self.psi))
         print(dphi)
+        print(dpsi)
         print(self.fd())
         exit(0)
         
@@ -75,6 +76,8 @@ class MRF(object):
             p_V = np.exp(self.score(V) - logZ)
             for i in V:
                 dphi[i] += p_V
+                for j in V:
+                    dpsi[i, j] += p_V
         return dphi, dpsi
 
     def fd(self, eps=1e-5):
@@ -82,6 +85,7 @@ class MRF(object):
         write a function to check the gradient 
         """
         dphi = np.zeros((len(self.calV)))
+        dpsi = np.zeros((len(self.calV), len(self.calV)))
         for i in xrange(len(self.calV)):
             self.phi[i] += eps
             val1 = self.logZ()
@@ -89,7 +93,14 @@ class MRF(object):
             val2 = self.logZ()
             self.phi[i] += eps
             dphi[i] = (val1-val2)/(2*eps)
-        return dphi
+            for j in xrange(len(self.calV)):
+                self.psi[i, j] += eps
+                val1 = self.logZ()
+                self.psi[i, j] -= 2*eps
+                val2 = self.logZ()
+                self.psi[i, j] += eps
+                dpsi[i] = (val1-val2)/(2*eps)
+        return dphi, dpsi
 
     def train(self):
         """
