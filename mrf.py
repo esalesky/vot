@@ -88,7 +88,7 @@ class MRF(object):
             self.phi[i] -= 2*eps
             val2 = self.logZ()
             self.phi[i] += eps
-            dphi[i] = (val2-val1)/(2*eps)
+            dphi[i] = (val1-val2)/(2*eps)
         return dphi
 
     def train(self):
