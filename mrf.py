@@ -77,8 +77,7 @@ class MRF(object):
             for i in V:
                 dphi[i] += p_V
                 for j in V:
-                    if i != j:
-                        dpsi[i, j] += p_V
+                    dpsi[i, j] += p_V
         return dphi, dpsi
 
     def fd(self, eps=1e-5):
