@@ -7,7 +7,7 @@ def logsumexp(ns):
     return max + np.log(sumOfExp)
 
 
-class MRF(object):
+class MarkovPintProcess(object):
 
     def __init__(self, num_vowels=9):
         self.calV = range(num_vowels)
@@ -110,4 +110,4 @@ class MRF(object):
         """
         pass
 
-mrf = MRF()    
+vowels = MarkovPintProcess()    
